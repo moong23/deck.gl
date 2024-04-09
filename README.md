@@ -13,52 +13,52 @@
   </a>
 </p>
 
-<h1 align="center">deck.gl | <a href="https://deck.gl">Website</a></h1>
+<h1 align="center">deck.gl | <a href="https://deck.gl">홈페이지</a></h1>
 
-<h5 align="center"> GPU-powered, highly performant large-scale data visualization</h5>
+<h5 align="center"> GPU기반의 고성능 대규모 데이터 시각화 </h5>
 
 [![docs](http://i.imgur.com/mvfvgf0.jpg)](https://visgl.github.io/deck.gl)
 
 
-deck.gl is designed to simplify high-performance, WebGL2/WebGPU based visualization of large data sets. Users can quickly get impressive visual results with minimal effort by composing existing layers, or leverage deck.gl's extensible architecture to address custom needs.
+deck.gl은 대규모 데이터셋의 고성능 WebGL2/WebGPU 기반 시각화 작업을 단순화하도록 설계되었습니다. 사용자는 기존 레이어를 활용하거나 deck.gl의 확장 가능한 아키텍처를 활용하여 사용자 맞춤형 요구사항을 충족하는 강렬한 시각적 결과물을 최소한의 작업을 통해 빠르게 얻어낼 수 있습니다.
 
-deck.gl maps **data** (usually an array of JSON objects) into a stack of visual **layers** - e.g. icons, polygons, texts; and look at them with **views**: e.g. map, first-person, orthographic.
+deck.gl은 **데이터** (일반적으로 JSON 객체 배열) 를 시각적 **레이어** - 예를들어 아이콘, 다각형, 텍스트; 의 스택으로 매핑하고 **보기**를 통해 이를 확인합니다: 예를들어 지도, 1인칭, 정사영.
 
-deck.gl handles a number of challenges out of the box:
+deck.gl은 여러 가지 문제를 추가 설치 없이 처리할 수 있습니다:
 
-* Performant rendering and updating of large data sets
-* Interactive event handling such as picking, highlighting and filtering
-* Cartographic projections and integration with major basemap providers
-* A catalog of proven, well-tested layers
+* 대용량 데이터셋의 고성능 렌더링 및 업데이트
+* 선택, 강조, 필터링하기와 같은 상호작용 이벤트 처리
+* 지도 투영 및 주요 베이스 지도 제공업체와의 통합
+* 충분한 테스트를 거친 검증된 레이어 카탈로그
 
-Deck.gl is designed to be highly customizable. All layers come with flexible APIs to allow programmatic control of each aspect of the rendering. All core classes such are easily extendable by the users to address custom use cases.
+Deck.gl은 사용자가 자유롭게 커스터마이징할 수 있게 설계되었습니다. 모든 레이어는 렌더링 각 측면을 프로그래밍 방식으로 제어할 수 있는 유연한 API들과 함께 제공됩니다. 모든 핵심 클래스들은 사용자가 사용자 정의 유즈케이스들을 해결하기 위해 쉽게 확장할 수 있습니다.
 
-## Flavors
+## 구성
 
-### Script Tag
+### Script 태그
 
 ```html
 <script src="https://unpkg.com/deck.gl@latest/dist.min.js"></script>
 ```
 
-- [Get started](/docs/get-started/using-standalone.md#using-the-scripting-api)
-- [Full examples](https://github.com/visgl/deck.gl/tree/master/examples/get-started/scripting)
+- [시작하기](/docs/get-started/using-standalone.md#using-the-scripting-api)
+- [전체 예시](https://github.com/visgl/deck.gl/tree/master/examples/get-started/scripting)
 
-### NPM Module
+### NPM 모듈
 
 ```bash
 npm install deck.gl
 ```
 
-#### Pure JS
+#### 순수 JS
 
-- [Get started](/docs/get-started/using-standalone.md)
-- [Full examples](/examples/get-started/pure-js)
+- [시작하기](/docs/get-started/using-standalone.md)
+- [전체 예시](/examples/get-started/pure-js)
 
 #### React
 
-- [Get started](/docs/get-started/using-with-react.md)
-- [Full examples](/examples/get-started/react)
+- [시작하기](/docs/get-started/using-with-react.md)
+- [전체 예시](/examples/get-started/react)
 
 ### Python
 
@@ -66,41 +66,40 @@ npm install deck.gl
 pip install pydeck
 ```
 
-- [Get started](https://deckgl.readthedocs.io/en/latest/installation.html)
-- [Examples](https://deckgl.readthedocs.io/en/latest/layer.html)
+- [시작하기](https://deckgl.readthedocs.io/en/latest/installation.html)
+- [예시](https://deckgl.readthedocs.io/en/latest/layer.html)
 
-### Third-Party Goodies
+### 타사 상품
 
 - [deckgl-typings](https://github.com/danmarshall/deckgl-typings) (Typescript)
 - [mapdeck](https://symbolixau.github.io/mapdeck/articles/mapdeck.html) (R)
 - [vega-deck.gl](https://github.com/microsoft/SandDance/tree/master/packages/vega-deck.gl) ([Vega](https://vega.github.io/))
-- [earthengine-layers](https://earthengine-layers.com/) ([Google Earth Engine](https://earthengine.google.com/))
+- [earthengine-layers](https://earthengine-layers.com/) ([구글어스 엔진](https://earthengine.google.com/))
 - [deck.gl-native](https://github.com/UnfoldedInc/deck.gl-native) (C++)
-- [deck.gl-raster](https://github.com/kylebarron/deck.gl-raster/) (Computation on rasters)
+- [deck.gl-raster](https://github.com/kylebarron/deck.gl-raster/) (raster에서의 연산)
 
-## Learning Resources
+## 학습 자료
 
-* [API documentation](https://deck.gl/#/documentation) for the latest release
-* [Website demos](https://deck.gl/#/examples) with links to source
-* [Interactive playground](https://deck.gl/playground)
-* [deck.gl Codepen demos](https://codepen.io/vis-gl/)
-* [deck.gl Observable demos](https://beta.observablehq.com/@pessimistress)
-* [vis.gl Medium blog](https://medium.com/vis-gl)
-* [deck.gl Slack workspace](https://slack-invite.openjsf.org/)
+* [API 문서](https://deck.gl/#/documentation) for the latest release
+* [웹사이트 시연](https://deck.gl/#/examples) with links to source
+* [상호작용 플레이그라운드](https://deck.gl/playground)
+* [deck.gl Codepen 시연](https://codepen.io/vis-gl/)
+* [deck.gl Observable 시연](https://beta.observablehq.com/@pessimistress)
+* [vis.gl Medium 블로그](https://medium.com/vis-gl)
+* [deck.gl Slack 작업공간](https://slack-invite.openjsf.org/)
 
-## Contributing
+## 기여하기
 
-deck.gl is part of vis.gl, an [OpenJS Foundation](https://openjsf.org/) project. Read the [contribution guidelines](/CONTRIBUTING.md) if you are interested in contributing.
-
-
-## Attributions
-
-#### Data sources
-
-Data sources are listed in each example.
+deck.gl은 [OpenJS 재단](https://openjsf.org/) 프로젝트인 vls.gl의 일부입니다. 기여에 관심이 있으시면 [기여 가이드라인](/CONTRIBUTING.md) 을 읽어보세요.
 
 
-#### The deck.gl project is supported by
+## 어트리뷰션
+
+#### 데이터 원본
+
+각 예제에는 데이터 원본들이 나열되어 있습니다.
+
+#### deck.gl 프로젝트는 다음과 같은 곳에서 지원받고 있습니다.
 
 <a href="https://www.unfolded.ai"><img src="https://raw.githubusercontent.com/visgl/deck.gl-data/master/images/branding/unfolded.png" height="32" /></a>
 <a href="https://www.foursquare.com"><img src="https://raw.githubusercontent.com/visgl/deck.gl-data/master/images/branding/fsq.svg" height="40" /></a>
