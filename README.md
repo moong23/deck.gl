@@ -22,7 +22,7 @@
 
 deck.gl은 대규모 데이터셋의 고성능 WebGL2/WebGPU 기반 시각화 작업을 단순화하도록 설계되었습니다. 사용자는 기존 레이어를 활용하거나 deck.gl의 확장 가능한 아키텍처를 활용하여 사용자 맞춤형 요구사항을 충족하는 강렬한 시각적 결과물을 최소한의 작업을 통해 빠르게 얻어낼 수 있습니다.
 
-deck.gl은 **데이터** (일반적으로 JSON 객체 배열) 를 시각적 **레이어** - 예를들어 아이콘, 다각형, 텍스트; 의 스택으로 매핑하고 **보기**를 통해 이를 확인합니다: 예를들어 지도, 1인칭, 정사영.
+deck.gl은 **데이터** (일반적으로 JSON 객체 배열) 를 시각적 아이콘, 다각형, 텍스트와 같은 **레이어**의 스택으로 매핑하고 지도, 1인칭, 정사영과 같은 **보기방식**을 통해 이를 확인합니다.
 
 deck.gl은 여러 가지 문제를 추가 설치 없이 처리할 수 있습니다:
 
@@ -80,8 +80,8 @@ pip install pydeck
 
 ## 학습 자료
 
-* [API 문서](https://deck.gl/#/documentation) for the latest release
-* [웹사이트 시연](https://deck.gl/#/examples) with links to source
+* [API 문서](https://deck.gl/#/documentation) 에서 최신 배포버전을 확인하세요
+* [웹사이트 시연](https://deck.gl/#/examples) 소스 링크 포함
 * [상호작용 플레이그라운드](https://deck.gl/playground)
 * [deck.gl Codepen 시연](https://codepen.io/vis-gl/)
 * [deck.gl Observable 시연](https://beta.observablehq.com/@pessimistress)
