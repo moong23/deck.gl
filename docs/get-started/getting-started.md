@@ -14,7 +14,7 @@ npm install deck.gl --save
 yarn add deck.gl
 ```
 
-[deck.gl](https://www.npmjs.com/package/deck.gl) 모듈은 모든 deck.gl의 기능과 종속성이 포함하고 있습니다. 기능의 하위 항목을 선택 설치하려면 [Dependencies](#selectively-install-dependencies) 항목을 참조하세요.
+[deck.gl](https://www.npmjs.com/package/deck.gl) 모듈은 모든 deck.gl의 기능과 종속성이 포함하고 있습니다. 기능의 하위 항목을 선택 설치하려면 [의존성](#selectively-install-dependencies) 항목을 참조하세요.
 
 ## 예제 실행하기
 deck.gl 레포지토리는 애플리케이션의 좋은 출발점이 될 수 있는 소규모 독립형 예제가 담긴 [예시 폴더](https://github.com/visgl/deck.gl/tree/master/examples)를 포함하고 있습니다.
