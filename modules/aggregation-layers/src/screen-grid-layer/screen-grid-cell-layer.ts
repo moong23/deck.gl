@@ -18,7 +18,7 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-import {Device, Texture} from '@luma.gl/core';
+import {Texture} from '@luma.gl/core';
 import {Model, Geometry} from '@luma.gl/engine';
 import {Layer, LayerProps, log, picking, UpdateParameters, DefaultProps} from '@deck.gl/core';
 import {defaultColorRange, colorRangeToFlatArray} from '../utils/color-utils';
@@ -157,7 +157,8 @@ export default class ScreenGridCellLayer<DataT = any, ExtraPropsT extends {} = {
             0, 1, 0,
           ])
         }
-      })
+      }),
+      isInstanced: true
     });
   }
 
